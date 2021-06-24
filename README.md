@@ -8,3 +8,4 @@ This repository has solutions to the leetcode problems
 4. Longest Palindromic Substring
 5. String to Integer (atoi)
 6. Palindrome Number
+7. ReverseInteger
