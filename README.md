@@ -12,3 +12,4 @@ This repository has solutions to the leetcode problems
 8. ContainerWithMostWater
 9. IntegerToRoman
 10. RomanToInteger
+11. LongestCommonPrefix
