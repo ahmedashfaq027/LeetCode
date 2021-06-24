@@ -23,8 +23,6 @@ Output: "a"
 
 */
 
-import java.util.*;
-
 public class LongestPalindromicSubstring {
     public static void main(String[] args) {
         LongestPalindromicSubstring lc = new LongestPalindromicSubstring();

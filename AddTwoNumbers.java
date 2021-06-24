@@ -22,8 +22,6 @@ Output: [8,9,9,9,0,0,0,1]
 
 */
 
-import java.util.*;
-
 class ListNode {
     int val;
     ListNode next;
@@ -60,7 +58,7 @@ public class AddTwoNumbers {
 
         ListNode ans = lc.addTwoNumbers(l1, l2);
         lc.printLL(ans);
-        
+
     }
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

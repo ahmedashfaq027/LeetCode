@@ -81,8 +81,6 @@ Output: -2147483648
 
 */
 
-import java.util.*;
-
 public class StringToInteger {
     public static void main(String[] args) {
         StringToInteger lc = new StringToInteger();

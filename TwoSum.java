@@ -38,8 +38,10 @@ class Pair {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
         Pair pair = (Pair) o;
         return x == pair.x && y == pair.y;
     }
@@ -59,11 +61,10 @@ public class TwoSum {
     public static void main(String[] args) {
         TwoSum lc = new TwoSum();
 
-        int[] nums = new int[]{2, 7, 11, 15};
+        int[] nums = new int[] { 2, 7, 11, 15 };
         int[] ans = lc.twoSum(nums, 9);
 
         System.out.println(Arrays.toString(ans));
-        
 
     }
 
@@ -81,7 +82,6 @@ public class TwoSum {
         });
         // *****************************************
 
-        List<Pair> ans = new ArrayList<>();
         int idx = 0;
         for (Pair i : arr) {
             int p = i.x;
@@ -90,20 +90,17 @@ public class TwoSum {
 
             Pair res = BS(arr, q, idx, arr.size() - 1);
             if (res != null)
-                return new int[]{i.y, res.y};
+                return new int[] { i.y, res.y };
         }
 
         /*
-        for (Pair i : ans) {
-            System.out.println(i.toString());
-        }
-        */
+         * for (Pair i : ans) { System.out.println(i.toString()); }
+         */
 
         return new int[0];
     }
 
     private Pair BS(List<Pair> ar, int k, int lo, int hi) {
-        int ans = -1, idx = -1;
         while (lo <= hi) {
             int mid = (lo + hi) / 2;
             Pair tmp = ar.get(mid);
