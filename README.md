@@ -13,3 +13,4 @@ This repository has solutions to the leetcode problems
 9. IntegerToRoman
 10. RomanToInteger
 11. LongestCommonPrefix
+12. ValidParenthesis
