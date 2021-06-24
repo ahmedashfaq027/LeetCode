@@ -9,3 +9,6 @@ This repository has solutions to the leetcode problems
 5. String to Integer (atoi)
 6. Palindrome Number
 7. ReverseInteger
+8. ContainerWithMostWater
+9. IntegerToRoman
+10. RomanToInteger
