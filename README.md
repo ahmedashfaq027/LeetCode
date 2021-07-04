@@ -17,3 +17,4 @@ This repository has solutions to the leetcode problems
 13. LetterCombinationsofPhoneNumber
 14. MergeTwoSortedLists
 15. SearchInsertPosition
+16. RemoveDuplicatesfromSortedArray
