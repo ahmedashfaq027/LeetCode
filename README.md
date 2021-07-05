@@ -21,3 +21,4 @@ This repository has solutions to the leetcode problems
 17. RemoveElement
 18. ImplementStrStr
 19. Sqrt
+20. RemoveNthNodeFromEndofList
