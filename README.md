@@ -29,3 +29,4 @@ This repository has solutions to the leetcode problems
 25. SearchinRotatedSortedArray
 26. SearchinRotatedSortedArrayII
 27. NextPermutation
+28. Permutations
