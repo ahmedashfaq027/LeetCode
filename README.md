@@ -26,3 +26,4 @@ This repository has solutions to the leetcode problems
 22. ThreeSum
 23. ThreeSumClosest
 24. DivideTwoIntegers
+25. SearchinRotatedSortedArray
