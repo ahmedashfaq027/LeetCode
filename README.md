@@ -22,3 +22,4 @@ This repository has solutions to the leetcode problems
 18. ImplementStrStr
 19. Sqrt
 20. RemoveNthNodeFromEndofList
+21. SwappingNodesinaLinkedList
