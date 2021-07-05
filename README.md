@@ -28,3 +28,4 @@ This repository has solutions to the leetcode problems
 24. DivideTwoIntegers
 25. SearchinRotatedSortedArray
 26. SearchinRotatedSortedArrayII
+27. NextPermutation
