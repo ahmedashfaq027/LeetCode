@@ -31,3 +31,4 @@ This repository has solutions to the leetcode problems
 27. NextPermutation
 28. Permutations
 29. PermutationsII
+30. Combinations
