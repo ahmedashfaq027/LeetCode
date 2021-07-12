@@ -40,3 +40,4 @@ This repository has solutions to the leetcode problems
 36. MaxChunksToMakeSortedII
 37. PowXN
 38. SuperPow
+39. GenerateParentheses
