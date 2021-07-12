@@ -41,3 +41,4 @@ This repository has solutions to the leetcode problems
 37. PowXN
 38. SuperPow
 39. GenerateParentheses
+40. IsomorphicStrings
