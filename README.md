@@ -46,3 +46,4 @@ This repository has solutions to the leetcode problems
 42. MaximumLengthofRepeatedSubarray
 43. MinimumSizeSubarraySum
 44. RotateImage
+45. DetermineWhetherMatrixCanBeObtainedByRotation
