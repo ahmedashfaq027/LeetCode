@@ -38,3 +38,4 @@ This repository has solutions to the leetcode problems
 34. CombinationSumIV
 35. MaxChunksToMakeSorted
 36. MaxChunksToMakeSortedII
+37. PowXN
