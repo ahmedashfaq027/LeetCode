@@ -48,3 +48,4 @@ This repository has solutions to the leetcode problems
 44. RotateImage
 45. DetermineWhetherMatrixCanBeObtainedByRotation
 46. Matrix01
+47. PathWithMinimumEffort
