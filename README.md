@@ -53,3 +53,4 @@ This repository has solutions to the leetcode problems
 47. PathWithMinimumEffort
 48. JumpGameII
 49. JumpGame
+50. OpenTheLock
