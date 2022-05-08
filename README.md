@@ -63,3 +63,4 @@ This repository has solutions to the leetcode problems
 57. MinCostClimbingStairs
 58. PascalsTriangleII
 59. BestTimetoBuyandSellStock
+60. ClimbingStairs
