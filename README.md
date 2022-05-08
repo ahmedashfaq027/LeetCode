@@ -58,3 +58,4 @@ This repository has solutions to the leetcode problems
 52. CountingBits
 53. FibonacciNumber
 54. DivisorGame
+55. PascalsTriangle
