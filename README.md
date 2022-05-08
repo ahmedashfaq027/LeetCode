@@ -59,3 +59,4 @@ This repository has solutions to the leetcode problems
 53. FibonacciNumber
 54. DivisorGame
 55. PascalsTriangle
+56. NthTribonacciNumber
