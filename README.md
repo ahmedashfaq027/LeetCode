@@ -54,3 +54,5 @@ This repository has solutions to the leetcode problems
 48. JumpGameII
 49. JumpGame
 50. OpenTheLock
+51. RottingOranges
+52. CountingBits
