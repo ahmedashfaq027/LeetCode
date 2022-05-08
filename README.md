@@ -62,3 +62,4 @@ This repository has solutions to the leetcode problems
 56. NthTribonacciNumber
 57. MinCostClimbingStairs
 58. PascalsTriangleII
+59. BestTimetoBuyandSellStock
