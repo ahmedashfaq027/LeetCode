@@ -57,3 +57,4 @@ This repository has solutions to the leetcode problems
 51. RottingOranges
 52. CountingBits
 53. FibonacciNumber
+54. DivisorGame
