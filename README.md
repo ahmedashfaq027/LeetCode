@@ -67,3 +67,4 @@ This repository has solutions to the leetcode problems
 61. IsSubsequence
 62. GetMaximuminGeneratedArray
 63. MaximumSubarray
+64. AllPossibleFullBinaryTrees
