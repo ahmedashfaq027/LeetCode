@@ -37,6 +37,11 @@ public class MinCostClimbingStairs {
         System.out.println(lc.minCostClimbingStairs(new int[]{1, 100, 1, 1, 1, 100, 1, 1, 100, 1}));
     }
 
+    /*
+        Explanation:
+            DP Equation: dp[i] = cost[i] + min(dp[i-1], dp[i-2])
+            Base cases: dp[0] = cost[0], dp[1] = cost[1]
+    */
     public int minCostClimbingStairs(int[] cost) {
         int n = cost.length;
         int[] dp = new int[n];
