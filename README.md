@@ -61,3 +61,4 @@ This repository has solutions to the leetcode problems
 55. PascalsTriangle
 56. NthTribonacciNumber
 57. MinCostClimbingStairs
+58. PascalsTriangleII
