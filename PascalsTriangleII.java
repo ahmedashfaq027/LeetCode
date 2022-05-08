@@ -33,6 +33,11 @@ public class PascalsTriangleII {
         System.out.println(lc.getRow(0));
     }
 
+    /*
+        Explanation:
+            DP Equation: dp[j] = dp[j] + dp[j-1]. This has to be running in a reverse loop (from i to 1)
+            Base cases: dp[0] = 1
+    */
     public List<Integer> getRow(int rowIndex) {
         List<Integer> res = new ArrayList<>(Collections.nCopies(rowIndex + 1, 0));
         res.set(0, 1);
