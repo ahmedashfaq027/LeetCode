@@ -60,3 +60,4 @@ This repository has solutions to the leetcode problems
 54. DivisorGame
 55. PascalsTriangle
 56. NthTribonacciNumber
+57. MinCostClimbingStairs
