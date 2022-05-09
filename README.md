@@ -73,3 +73,4 @@ This repository has solutions to the leetcode problems
 67. CourseSchedule
 68. CourseScheduleII
 69. IsGraphBipartite
+70. RedundantConnection
