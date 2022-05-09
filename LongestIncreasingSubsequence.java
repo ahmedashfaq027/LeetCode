@@ -32,6 +32,11 @@ public class LongestIncreasingSubsequence {
         System.out.println(lc.lengthOfLIS(new int[]{7, 7, 7, 7, 7, 7, 7}));
     }
 
+    /*
+        Explanation:
+            DP Equation: dp[i] = max(dp[i], dp[j] + 1) for all j < i
+            Base cases: fill(dp, 1). As minimum subsequence would be of itself.
+    */
     public int lengthOfLIS(int[] nums) {
         int n = nums.length;
         int[] dp = new int[n];
