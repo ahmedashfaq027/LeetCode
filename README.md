@@ -82,3 +82,4 @@ This repository has solutions to the leetcode problems
 76. CoinChange
 77. MaximumProductSubarray
 78. MaximumProductofThreeNumbers
+79. LongestIncreasingSubsequence
