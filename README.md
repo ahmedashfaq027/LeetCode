@@ -72,3 +72,4 @@ This repository has solutions to the leetcode problems
 66. CloneGraph
 67. CourseSchedule
 68. CourseScheduleII
+69. IsGraphBipartite
