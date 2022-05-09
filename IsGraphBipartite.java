@@ -43,13 +43,46 @@ public class IsGraphBipartite {
         System.out.println(lc.isBipartite(new int[][]{{1, 3}, {0, 2}, {1, 3}, {0, 2}}));
     }
 
+    public boolean isBipartite(int[][] graph) {
+        int n = graph.length;
+        int[] color = new int[n];
+        Arrays.fill(color, -1);
+
+        for (int i = 0; i < n; i++) {
+            if (color[i] == -1) {
+                if (!dfsCheck(graph, i, color)) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+    private boolean dfsCheck(int[][] adj, int node, int[] color) {
+        if (color[node] == -1)
+            color[node] = -1;
+
+        for (int i : adj[node]) {
+            if (color[i] == -1) {
+                color[i] = 1 - color[node];
+
+                if (!dfsCheck(adj, i, color))
+                    return false;
+            } else if (color[i] == color[node])
+                return false;
+        }
+
+        return true;
+    }
+
     /*
         Explanation:
             Bipartite is about using only 2 colors. Hence we are using 0/1.
             We are using this color array as the visited array. if color[i] = -1, then unvisited.
             We traverse using BFS, if a node is visited/colored, we make sure it is not the same color as node.
     */
-    public boolean isBipartite(int[][] graph) {
+    public boolean isBipartiteBFS(int[][] graph) {
         int n = graph.length;
         int[] color = new int[n];
         Arrays.fill(color, -1);
@@ -65,7 +98,7 @@ public class IsGraphBipartite {
         return true;
     }
 
-    public boolean bfsCheck(int[][] adj, int node, int[] color) {
+    private boolean bfsCheck(int[][] adj, int node, int[] color) {
         Queue<Integer> q = new LinkedList<>();
         q.add(node);
         color[node] = 1;
