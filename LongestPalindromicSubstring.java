@@ -27,12 +27,48 @@ public class LongestPalindromicSubstring {
     public static void main(String[] args) {
         LongestPalindromicSubstring lc = new LongestPalindromicSubstring();
 
+        System.out.println(lc.longestPalindrome("babad"));
+        System.out.println(lc.longestPalindrome("cbbd"));
+        System.out.println(lc.longestPalindrome("a"));
         System.out.println(lc.longestPalindrome("ac"));
+        System.out.println(lc.longestPalindrome("aacabdkacaa"));
     }
 
+    /*
+        Explanation:
+            DP Equation: dp[i][j] = dp[i+1][j-1] + 2 only if str[i] == str[j] and dp[i+1][j-1] > 0
+    */
     public String longestPalindrome(String s) {
         int n = s.length();
-        int ptr1 = 0, ptr2 = 0;
+        int[][] dp = new int[n][n];
+        int st = 0, length = 0;
+
+        for (int len = 0; len < n; len++) {
+            for (int i = 0, j = len; j < n; i++, j++) {
+                if (len == 0)
+                    dp[i][j] = 1;
+                else if (len == 1 && s.charAt(i) == s.charAt(j))
+                    dp[i][j] = 2;
+                else if (s.charAt(i) == s.charAt(j)) {
+                    if (dp[i + 1][j - 1] > 0) {
+                        dp[i][j] = dp[i + 1][j - 1] + 2;
+                    }
+                }
+
+                if (dp[i][j] > length) {
+                    length = dp[i][j];
+                    st = i;
+                }
+
+            }
+        }
+
+        return s.substring(st, st + length);
+    }
+
+    public String longestPalindromePtr(String s) {
+        int n = s.length();
+        int ptr1, ptr2;
         int ans = 0;
         int minIdx = 0, maxIdx = 0;
 
