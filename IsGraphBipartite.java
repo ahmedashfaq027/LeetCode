@@ -66,7 +66,6 @@ public class IsGraphBipartite {
         for (int i : adj[node]) {
             if (color[i] == -1) {
                 color[i] = 1 - color[node];
-
                 if (!dfsCheck(adj, i, color))
                     return false;
             } else if (color[i] == color[node])
