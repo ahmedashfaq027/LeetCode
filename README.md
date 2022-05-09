@@ -80,3 +80,5 @@ This repository has solutions to the leetcode problems
 74. HouseRobber
 75. HouseRobberII
 76. CoinChange
+77. MaximumProductSubarray
+78. MaximumProductofThreeNumbers
