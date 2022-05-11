@@ -85,3 +85,4 @@ This repository has solutions to the leetcode problems
 79. LongestIncreasingSubsequence
 80. WordBreak
 81. NumberofWaystoSelectBuildings
+82. MissingNumber
