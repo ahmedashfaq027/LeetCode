@@ -87,3 +87,4 @@ This repository has solutions to the leetcode problems
 81. NumberofWaystoSelectBuildings
 82. MissingNumber
 83. FindtheDuplicateNumber
+84. FindAllNumbersDisappearedinanArray
