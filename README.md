@@ -84,3 +84,4 @@ This repository has solutions to the leetcode problems
 78. MaximumProductofThreeNumbers
 79. LongestIncreasingSubsequence
 80. WordBreak
+81. NumberofWaystoSelectBuildings
