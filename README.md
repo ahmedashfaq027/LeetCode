@@ -89,3 +89,4 @@ This repository has solutions to the leetcode problems
 83. FindtheDuplicateNumber
 84. FindAllNumbersDisappearedinanArray
 85. SingleNumber
+86. Convert1DArrayInto2DArray
