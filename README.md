@@ -86,3 +86,4 @@ This repository has solutions to the leetcode problems
 80. WordBreak
 81. NumberofWaystoSelectBuildings
 82. MissingNumber
+83. FindtheDuplicateNumber
