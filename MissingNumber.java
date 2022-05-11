@@ -36,6 +36,19 @@ public class MissingNumber {
     public int missingNumber(int[] nums) {
         int n = nums.length;
 
+        int actualSum = n * (n + 1) / 2;
+        int computedSum = 0;
+
+        for (int num : nums) {
+            computedSum += num;
+        }
+
+        return actualSum - computedSum;
+    }
+
+    public int missingNumberXOR(int[] nums) {
+        int n = nums.length;
+
         int actualXOR = 0, computedXOR = 0;
         for (int i = 0; i < n; i++) {
             actualXOR ^= i;
