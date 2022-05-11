@@ -88,3 +88,4 @@ This repository has solutions to the leetcode problems
 82. MissingNumber
 83. FindtheDuplicateNumber
 84. FindAllNumbersDisappearedinanArray
+85. SingleNumber
