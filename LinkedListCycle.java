@@ -42,8 +42,10 @@ class ListNode {
     }
 
     public static void print(ListNode head) {
-        if (head == null)
+        if (head == null) {
             System.out.println("NULL");
+            return;
+        }
 
         StringBuilder s = new StringBuilder();
         ListNode temp = head;
@@ -51,7 +53,7 @@ class ListNode {
             s.append(temp.val).append(" -> ");
             temp = temp.next;
         }
-        s.append(temp.val).append(" -> ");
+        s.append(temp.val);
 
         System.out.println(s);
     }
