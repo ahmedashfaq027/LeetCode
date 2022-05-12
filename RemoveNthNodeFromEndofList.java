@@ -23,20 +23,34 @@ Output: [1]
 
 */
 
-public class ListNode {
+class ListNode {
     int val;
     ListNode next;
 
-    ListNode() {
-    }
-
-    ListNode(int val) {
+    public ListNode(int val) {
         this.val = val;
     }
 
-    ListNode(int val, ListNode next) {
+    public ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
+    }
+
+    public static void print(ListNode head) {
+        if (head == null) {
+            System.out.println("NULL");
+            return;
+        }
+
+        StringBuilder s = new StringBuilder();
+        ListNode temp = head;
+        while (temp.next != null) {
+            s.append(temp.val).append(" -> ");
+            temp = temp.next;
+        }
+        s.append(temp.val);
+
+        System.out.println(s);
     }
 }
 
@@ -45,16 +59,65 @@ public class RemoveNthNodeFromEndofList {
         RemoveNthNodeFromEndofList lc = new RemoveNthNodeFromEndofList();
 
         ListNode h1 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-        lc.printLL(lc.removeNthFromEnd(h1, 2));
+        ListNode.print(lc.removeNthFromEnd(h1, 2));
 
         ListNode h2 = new ListNode(1);
-        lc.printLL(lc.removeNthFromEnd(h2, 1));
+        ListNode.print(lc.removeNthFromEnd(h2, 1));
 
         ListNode h3 = new ListNode(1, new ListNode(2));
-        lc.printLL(lc.removeNthFromEnd(h3, 1));
+        ListNode.print(lc.removeNthFromEnd(h3, 1));
     }
 
+    ListNode res;
+
     public ListNode removeNthFromEnd(ListNode head, int n) {
+        recurse(head, n);
+        return res;
+    }
+
+    private int recurse(ListNode head, int n) {
+        if (head == null)
+            return 1;
+
+        int tmp = recurse(head.next, n);
+
+        if (tmp == n) {
+            res = head.next;
+            return -1;
+        }
+
+        if (tmp == -1) {
+            res = head;
+            head.next = head.next.next;
+            return -2;
+        }
+
+        if (tmp == -2) {
+            res = head;
+            return -2;
+        }
+
+        return tmp + 1;
+    }
+
+    public ListNode removeNthFromEndTwoPtrs(ListNode head, int n) {
+        ListNode dummyNode = new ListNode(0, head);
+        ListNode slow = dummyNode, fast = dummyNode;
+        for (int i = 0; i < n; i++) {
+            fast = fast.next;
+        }
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next;
+        }
+
+        slow.next = slow.next.next;
+
+        return dummyNode.next;
+    }
+
+    public ListNode removeNthFromEndBrute(ListNode head, int n) {
         int length = lengthLL(head);
         int idxToRemove = length - n;
 
@@ -81,13 +144,5 @@ public class RemoveNthNodeFromEndofList {
             h = h.next;
         }
         return len;
-    }
-
-    private void printLL(ListNode h) {
-        while (h != null) {
-            System.out.print(h.val + " ");
-            h = h.next;
-        }
-        System.out.println();
     }
 }
