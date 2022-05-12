@@ -24,16 +24,30 @@ class ListNode {
     int val;
     ListNode next;
 
-    ListNode() {
-    }
-
-    ListNode(int val) {
+    public ListNode(int val) {
         this.val = val;
     }
 
-    ListNode(int val, ListNode next) {
+    public ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
+    }
+
+    public static void print(ListNode head) {
+        if (head == null) {
+            System.out.println("NULL");
+            return;
+        }
+
+        StringBuilder s = new StringBuilder();
+        ListNode temp = head;
+        while (temp.next != null) {
+            s.append(temp.val).append(" -> ");
+            temp = temp.next;
+        }
+        s.append(temp.val);
+
+        System.out.println(s);
     }
 }
 
@@ -70,8 +84,35 @@ public class MergeTwoSortedLists {
         ListNode.print(lc.mergeTwoLists(l1, l2));
     }
 
+    private ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        ListNode dummy = new ListNode(0);
+        ListNode temp = dummy;
+
+        while (l1 != null && l2 != null) {
+            if (l1.val < l2.val) {
+                temp.next = l1;
+                l1 = l1.next;
+            } else {
+                temp.next = l2;
+                l2 = l2.next;
+            }
+
+            temp = temp.next;
+        }
+
+        if (l1 != null) {
+            temp.next = l1;
+        }
+
+        if (l2 != null) {
+            temp.next = l2;
+        }
+
+        return dummy.next;
+    }
+
     // Merges two lists without using extra space
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+    public ListNode mergeTwoListsNoExtraSpace(ListNode l1, ListNode l2) {
         if (l1 == null && l2 == null)
             return null;
         else if (l1 == null)
