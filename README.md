@@ -96,3 +96,4 @@ This repository has solutions to the leetcode problems
 90. UglyNumberII
 91. LinkedListCycle
 92. MiddleoftheLinkedList
+93. PalindromeLinkedList
