@@ -104,3 +104,4 @@ This repository has solutions to the leetcode problems
 98. ReorderList
 99. ReverseLinkedList
 100. ReverseLinkedListII
+101. RotateList
