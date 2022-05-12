@@ -95,3 +95,4 @@ This repository has solutions to the leetcode problems
 89. SetMatrixZeroes
 90. UglyNumberII
 91. LinkedListCycle
+92. MiddleoftheLinkedList
