@@ -97,3 +97,4 @@ This repository has solutions to the leetcode problems
 91. LinkedListCycle
 92. MiddleoftheLinkedList
 93. PalindromeLinkedList
+94. RemoveLinkedListElements
