@@ -1,23 +1,22 @@
 /*
 
-https://leetcode.com/problems/reverse-linked-list/
+https://leetcode.com/problems/reverse-linked-list-ii/
 
-Given the head of a singly linked list, reverse the list, and return the reversed list.
+Given the head of a singly linked list and two integers left and right where left <= right, reverse the nodes of the list from position left to position right, and return the reversed list.
 
 Constraints:
-1. The number of nodes in the list is the range [0, 5000].
-2. -5000 <= Node.val <= 5000
+1. The number of nodes in the list is n.
+2. 1 <= n <= 500
+3. -500 <= Node.val <= 500
+4. 1 <= left <= right <= n
 
-Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?
+Follow up: Could you do it in one pass?
 
-Input: head = [1,2,3,4,5]
-Output: [5,4,3,2,1]
+Input: head = [1,2,3,4,5], left = 2, right = 4
+Output: [1,4,3,2,5]
 
-Input: head = [1,2]
-Output: [2,1]
-
-Input: head = []
-Output: []
+Input: head = [5], left = 1, right = 1
+Output: [5]
 
 */
 
