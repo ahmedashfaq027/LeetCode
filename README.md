@@ -98,3 +98,4 @@ This repository has solutions to the leetcode problems
 92. MiddleoftheLinkedList
 93. PalindromeLinkedList
 94. RemoveLinkedListElements
+95. RemoveDuplicatesfromSortedList
