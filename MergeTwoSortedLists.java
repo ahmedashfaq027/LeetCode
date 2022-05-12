@@ -40,23 +40,34 @@ class ListNode {
 public class MergeTwoSortedLists {
     public static void main(String[] args) {
         MergeTwoSortedLists lc = new MergeTwoSortedLists();
+
         ListNode l1 = new ListNode(1, new ListNode(3, new ListNode(4)));
         ListNode l2 = new ListNode(1, new ListNode(2, new ListNode(4)));
 
-        // ListNode l1 = null;
-        // ListNode l2 = null;
+        ListNode.print(l1);
+        ListNode.print(l2);
+        ListNode.print(lc.mergeTwoLists(l1, l2));
 
-        // ListNode l1 = new ListNode(5);
-        // ListNode l2 = new ListNode(1, new ListNode(2, new ListNode(4)));
+        l1 = null;
+        l2 = null;
 
-        // ListNode l1 = new ListNode(-9, new ListNode(3));
-        // ListNode l2 = new ListNode(5, new ListNode(7));
+        ListNode.print(l1);
+        ListNode.print(l2);
+        ListNode.print(lc.mergeTwoLists(l1, l2));
 
-        lc.printLL(l1);
-        lc.printLL(l2);
+        l1 = new ListNode(5);
+        l2 = new ListNode(1, new ListNode(2, new ListNode(4)));
 
-        ListNode res = lc.mergeTwoLists(l1, l2);
-        lc.printLL(res);
+        ListNode.print(l1);
+        ListNode.print(l2);
+        ListNode.print(lc.mergeTwoLists(l1, l2));
+
+        l2 = new ListNode(5, new ListNode(7));
+        l1 = new ListNode(-9, new ListNode(3));
+
+        ListNode.print(l1);
+        ListNode.print(l2);
+        ListNode.print(lc.mergeTwoLists(l1, l2));
     }
 
     // Merges two lists without using extra space
@@ -147,13 +158,5 @@ public class MergeTwoSortedLists {
         }
         tmp.next = new ListNode(data);
         return h;
-    }
-
-    private void printLL(ListNode h) {
-        while (h != null) {
-            System.out.print(h.val + " ");
-            h = h.next;
-        }
-        System.out.println();
     }
 }
