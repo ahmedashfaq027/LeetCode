@@ -105,3 +105,4 @@ This repository has solutions to the leetcode problems
 99. ReverseLinkedList
 100. ReverseLinkedListII
 101. RotateList
+102. SwapNodesinPairs
