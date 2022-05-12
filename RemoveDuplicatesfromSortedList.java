@@ -62,6 +62,23 @@ public class RemoveDuplicatesfromSortedList {
         ListNode.print(lc.deleteDuplicates(head));
     }
 
+    public ListNode deleteDuplicatesPtrs(ListNode head) {
+        if (head == null)
+            return null;
+
+        ListNode slow = head, fast = head;
+        while (fast != null) {
+            if (slow.val != fast.val) {
+                slow.next = fast;
+                slow = slow.next;
+            }
+            fast = fast.next;
+        }
+        slow.next = null;
+
+        return head;
+    }
+
     public ListNode deleteDuplicates(ListNode head) {
         ListNode temp = head;
         while (temp != null && temp.next != null) {
