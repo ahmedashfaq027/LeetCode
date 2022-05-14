@@ -42,7 +42,7 @@ public class ThreeSum {
             while (j < k) {
                 int sum = nums[i] + nums[j] + nums[k];
                 if (sum == 0)
-                    ans.add(Arrays.asList(nums[i], nums[j++], nums[k]));
+                    ans.add(Arrays.asList(nums[i], nums[j++], nums[k--]));
                 else if (sum < 0)
                     j++;
                 else
