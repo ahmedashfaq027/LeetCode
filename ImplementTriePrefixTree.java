@@ -53,9 +53,9 @@ class Trie {
 
             if (temp.c[ch] == null) {
                 temp.c[ch] = new Trie();
-                temp.count++;
             }
 
+            temp.count++;
             temp = temp.c[ch];
         }
 
