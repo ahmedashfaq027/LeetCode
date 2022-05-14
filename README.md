@@ -116,3 +116,4 @@ This repository has solutions to the leetcode problems
 110. ConcatenatedWords
 111. NumberofIslands
 112. SubarrayProductLessThanK
+113. SquaresofaSortedArray
