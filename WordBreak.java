@@ -49,9 +49,9 @@ class Trie {
 
             if (temp.c[ch] == null) {
                 temp.c[ch] = new Trie();
-                temp.count++;
             }
 
+            temp.count++;
             temp = temp.c[ch];
         }
 
@@ -142,9 +142,9 @@ public class WordBreak {
             return true;
 
         for (int i = 1; i <= n; i++) {
-            if (root.search(s.substring(0, i)) && isPossible(root, s.substring(i))) {
-                return true;
-            }
+            //            if (root.search(s.substring(0, i)) && isPossible(root, s.substring(i))) {
+            //                return true;
+            //            }
         }
 
         return false;
