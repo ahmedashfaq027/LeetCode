@@ -20,9 +20,7 @@ Output: []
 
 */
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class ThreeSum {
     public static void main(String[] args) {
@@ -32,6 +30,27 @@ public class ThreeSum {
         for (List<Integer> i : res) {
             System.out.println(Arrays.toString(i.toArray()));
         }
+    }
+
+    public List<List<Integer>> threeSumSet(int[] nums) {
+        int n = nums.length;
+        Arrays.sort(nums);
+
+        Set<List<Integer>> ans = new HashSet<>();
+        for (int i = 0; i < n - 2; i++) {
+            int j = i + 1, k = n - 1;
+            while (j < k) {
+                int sum = nums[i] + nums[j] + nums[k];
+                if (sum == 0)
+                    ans.add(Arrays.asList(nums[i], nums[j++], nums[k]));
+                else if (sum < 0)
+                    j++;
+                else
+                    k--;
+            }
+        }
+
+        return new ArrayList<>(ans);
     }
 
     public List<List<Integer>> threeSum(int[] nums) {
