@@ -64,9 +64,8 @@ public class WordSearch {
         for (int[] d : dir) {
             int x = i + d[0];
             int y = j + d[1];
-            int newIdx = idx + 1;
 
-            if (dfs(board, word, x, y, n, m, newIdx, visited))
+            if (dfs(board, word, x, y, n, m, idx + 1, visited))
                 return true;
         }
         visited[i][j] = false;
