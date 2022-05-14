@@ -19,16 +19,34 @@ Output: ""
 
 */
 
+import java.util.Arrays;
+
 class Trie {
     Trie[] c;
     int count;
+    boolean isEndofWord;
 
     public Trie() {
         c = new Trie[26];
-        count = 0;
-        for (int i = 0; i < 26; i++) {
-            c[i] = null;
+        Arrays.fill(c, null);
+    }
+
+    public void insert(String word) {
+        int n = word.length();
+        Trie temp = this;
+
+        for (int i = 0; i < n; i++) {
+            int ch = word.charAt(i) - 'a';
+
+            if (temp.c[ch] == null) {
+                temp.c[ch] = new Trie();
+            }
+
+            temp.count++;
+            temp = temp.c[ch];
         }
+
+        temp.isEndofWord = true;
     }
 }
 
@@ -45,7 +63,7 @@ public class LongestCommonPrefix {
 
         Trie root = new Trie();
         for (String i : strs)
-            insertIntoTrie(root, i);
+            root.insert(i);
 
         for (int i = 0; i < strs[0].length(); i++) {
             int idx = strs[0].charAt(i) - 'a';
@@ -64,16 +82,5 @@ public class LongestCommonPrefix {
         }
 
         return res.toString();
-    }
-
-    public void insertIntoTrie(Trie root, String w) {
-        for (char ch : w.toCharArray()) {
-            int idx = ch - 'a';
-            if (root.c[idx] == null) {
-                root.c[idx] = new Trie();
-            }
-            root = root.c[idx];
-            root.count++;
-        }
     }
 }
