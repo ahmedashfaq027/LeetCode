@@ -120,3 +120,5 @@ This repository has solutions to the leetcode problems
 114. BackspaceStringCompare
 115. SortColors
 116. TrappingRainWater
+117. CountPrimes
+118. SequentialDigits
