@@ -126,3 +126,4 @@ This repository has solutions to the leetcode problems
 120. LargestRectangleinHistogram
 121. ImplementQueueusingStacks
 122. Searcha2DMatrixII
+123. KthSmallestElementinaSortedMatrix
