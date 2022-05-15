@@ -119,3 +119,4 @@ This repository has solutions to the leetcode problems
 113. SquaresofaSortedArray
 114. BackspaceStringCompare
 115. SortColors
+116. TrappingRainWater
