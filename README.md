@@ -123,3 +123,4 @@ This repository has solutions to the leetcode problems
 117. CountPrimes
 118. SequentialDigits
 119. FindMedianfromDataStream
+120. LargestRectangleinHistogram
