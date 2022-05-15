@@ -124,3 +124,4 @@ This repository has solutions to the leetcode problems
 118. SequentialDigits
 119. FindMedianfromDataStream
 120. LargestRectangleinHistogram
+121. ImplementQueueusingStacks
