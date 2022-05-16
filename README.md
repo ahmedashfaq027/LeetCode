@@ -128,3 +128,4 @@ This repository has solutions to the leetcode problems
 122. Searcha2DMatrixII
 123. KthSmallestElementinaSortedMatrix
 124. ValidateBinarySearchTree
+125. BinaryTreeInorderTraversal
