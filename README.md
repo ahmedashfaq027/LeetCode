@@ -130,3 +130,4 @@ This repository has solutions to the leetcode problems
 124. ValidateBinarySearchTree
 125. BinaryTreeInorderTraversal
 126. BinaryTreePreorderTraversal
+127. BinaryTreePostorderTraversal
