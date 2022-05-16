@@ -132,3 +132,4 @@ This repository has solutions to the leetcode problems
 126. BinaryTreePreorderTraversal
 127. BinaryTreePostorderTraversal
 128. NaryTreePreorderTraversal
+129. NaryTreePostorderTraversal
