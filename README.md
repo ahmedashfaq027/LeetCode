@@ -129,3 +129,4 @@ This repository has solutions to the leetcode problems
 123. KthSmallestElementinaSortedMatrix
 124. ValidateBinarySearchTree
 125. BinaryTreeInorderTraversal
+126. BinaryTreePreorderTraversal
