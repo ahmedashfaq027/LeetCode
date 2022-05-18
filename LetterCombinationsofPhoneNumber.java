@@ -38,11 +38,45 @@ public class LetterCombinationsofPhoneNumber {
     public static void main(String[] args) {
         LetterCombinationsofPhoneNumber lc = new LetterCombinationsofPhoneNumber();
 
-        List<String> res = lc.letterCombinations("23");
-        System.out.println(Arrays.toString(res.toArray()));
+        System.out.println(lc.letterCombinations("23"));
+        System.out.println(lc.letterCombinations(""));
     }
 
+    HashMap<Character, String> keypad;
+
     public List<String> letterCombinations(String digits) {
+        keypad = new HashMap<>() {{
+            put('1', "");
+            put('2', "abc");
+            put('3', "def");
+            put('4', "ghi");
+            put('5', "jkl");
+            put('6', "mno");
+            put('7', "pqrs");
+            put('8', "tuv");
+            put('9', "wxyz");
+        }};
+
+        List<String> res = new ArrayList<>();
+        dfs(digits, 0, new StringBuilder(), res);
+        return res;
+    }
+
+    private void dfs(String digits, int idx, StringBuilder tmpRes, List<String> res) {
+        if (tmpRes.length() == digits.length()) {
+            if (tmpRes.length() > 0)
+                res.add(tmpRes.toString());
+            return;
+        }
+
+        for (char i : keypad.get(digits.charAt(idx)).toCharArray()) {
+            tmpRes.append(i);
+            dfs(digits, idx + 1, tmpRes, res);
+            tmpRes.deleteCharAt(tmpRes.length() - 1);
+        }
+    }
+
+    public List<String> letterCombinationsBruteforce(String digits) {
         HashMap<Character, String> keypad = new HashMap<>() {{
             put('1', "");
             put('2', "abc");
