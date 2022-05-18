@@ -53,20 +53,20 @@ public class CombinationSum {
         return res;
     }
 
-    private void combinations(int i, int[] candidates, int target, List<Integer> curComb, List<List<Integer>> res) {
+    private void combinations(int idx, int[] candidates, int target, List<Integer> curComb, List<List<Integer>> res) {
         if (target == 0) {
             res.add(new ArrayList<>(curComb));
             return;
         }
 
         int n = candidates.length;
-        for (int x = i; x < n; x++) {
-            if (candidates[x] > target)
+        for (int i = idx; i < n; i++) {
+            if (candidates[i] > target)
                 continue;
 
-            curComb.add(candidates[x]);
-            combinations(x, candidates, target - candidates[x], curComb, res);
-            curComb.remove(curComb.size() - 1);
+            curComb.add(candidates[i]);
+            combinations(i, candidates, target - candidates[i], curComb, res);
+            curComb.remove(Integer.valueOf(candidates[i]));
         }
     }
 }
