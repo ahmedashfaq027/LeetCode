@@ -43,26 +43,28 @@ public class CombinationSumII {
     }
 
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-        Arrays.sort(candidates);
         List<List<Integer>> res = new ArrayList<>();
+
+        Arrays.sort(candidates);
         combinations(0, candidates, target, new ArrayList<>(), res);
+
         return res;
     }
 
-    private void combinations(int i, int[] candidates, int target, List<Integer> curComb, List<List<Integer>> res) {
+    private void combinations(int idx, int[] candidates, int target, List<Integer> curComb, List<List<Integer>> res) {
         if (target == 0) {
             res.add(new ArrayList<>(curComb));
             return;
         }
 
         int n = candidates.length;
-        for (int x = i; x < n; x++) {
-            if (candidates[x] > target || (i != x && candidates[x] == candidates[x - 1]))
+        for (int i = idx; i < n; i++) {
+            if (candidates[i] > target || (idx != i && candidates[i] == candidates[i - 1]))
                 continue;
 
-            curComb.add(candidates[x]);
-            combinations(x + 1, candidates, target - candidates[x], curComb, res);
-            curComb.remove(curComb.size() - 1);
+            curComb.add(candidates[i]);
+            combinations(i + 1, candidates, target - candidates[i], curComb, res);
+            curComb.remove(Integer.valueOf(candidates[i]));
         }
     }
 }
