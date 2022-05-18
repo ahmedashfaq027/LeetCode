@@ -76,8 +76,8 @@ public class CombinationSumIV {
 
         int n = nums.length;
         dp[target] = 0;
-        for (int i = 0; i < n; i++) {
-            dp[target] += dfs(nums, target - nums[i], dp);
+        for (int num : nums) {
+            dp[target] += dfs(nums, target - num, dp);
         }
 
         return dp[target];
