@@ -40,7 +40,6 @@ public class PermutationsII {
     }
 
     public List<List<Integer>> permuteUnique(int[] nums) {
-        int n = nums.length;
         List<List<Integer>> res = new ArrayList<>();
 
         HashMap<Integer, Integer> freq = new HashMap<>();
