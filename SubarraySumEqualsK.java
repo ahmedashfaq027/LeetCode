@@ -35,8 +35,8 @@ public class SubarraySumEqualsK {
 
         int currSum = 0;
         int count = 0;
-        for (int i = 0; i < n; i++) {
-            currSum += nums[i];
+        for (int num : nums) {
+            currSum += num;
 
             if (preSum.containsKey(currSum - k)) {
                 count += preSum.get(currSum - k);
