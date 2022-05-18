@@ -36,6 +36,7 @@ public class PermutationsII {
 
         System.out.println(lc.permuteUnique(new int[]{1, 1, 2}));
         System.out.println(lc.permuteUnique(new int[]{1, 2, 3}));
+        System.out.println(lc.permuteUnique(new int[]{2, 2, 1, 1}));
     }
 
     public List<List<Integer>> permuteUnique(int[] nums) {
