@@ -46,16 +46,16 @@ public class Combinations {
         return res;
     }
 
-    private void combinations(int i, int n, int k, List<Integer> curComb, List<List<Integer>> res) {
+    private void combinations(int idx, int n, int k, List<Integer> curComb, List<List<Integer>> res) {
         if (k == 0) {
             res.add(new ArrayList<>(curComb));
             return;
         }
 
-        for (int x = i; x <= n; x++) {
-            curComb.add(x);
-            combinations(x + 1, n, k - 1, curComb, res);
-            curComb.remove(curComb.size() - 1);
+        for (int i = idx; i <= n; i++) {
+            curComb.add(i);
+            combinations(i + 1, n, k - 1, curComb, res);
+            curComb.remove(Integer.valueOf(i));
         }
     }
 }
