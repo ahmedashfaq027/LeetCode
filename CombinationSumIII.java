@@ -61,20 +61,20 @@ public class CombinationSumIII {
         return res;
     }
 
-    private void combinations(int i, int n, int k, List<Integer> curComb, List<List<Integer>> res) {
+    private void combinations(int idx, int targetSum, int k, List<Integer> curComb, List<List<Integer>> res) {
         if (curComb.size() == k) {
-            if (n == 0)
+            if (targetSum == 0)
                 res.add(new ArrayList<>(curComb));
             return;
         }
 
-        for (int x = i; x <= 9; x++) {
-            if (x > n)
+        for (int i = idx; i <= 9; i++) {
+            if (i > targetSum)
                 continue;
 
-            curComb.add(x);
-            combinations(x + 1, n - x, k, curComb, res);
-            curComb.remove(curComb.size() - 1);
+            curComb.add(i);
+            combinations(i + 1, targetSum - i, k, curComb, res);
+            curComb.remove(Integer.valueOf(i));
         }
     }
 }
