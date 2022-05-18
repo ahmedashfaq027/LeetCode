@@ -143,3 +143,4 @@ This repository has solutions to the leetcode problems
 137. PalindromePartitioning
 138. SudokuSolver
 139. NQueens
+140. NQueensII
