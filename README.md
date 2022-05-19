@@ -202,3 +202,4 @@ This repository has solutions to the leetcode problems
 141. [Leetcode](https://leetcode.com/problems/longest-consecutive-sequence/)
      | [LongestConsecutiveSequence](LongestConsecutiveSequence.java)
 142. FruitIntoBaskets
+143. PermutationinString
