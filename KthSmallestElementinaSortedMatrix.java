@@ -26,7 +26,39 @@ Output: -5
 
 */
 
+import java.util.Comparator;
+import java.util.Objects;
 import java.util.PriorityQueue;
+
+class PairG<T1, T2> {
+    public T1 x;
+    public T2 y;
+
+    public PairG(T1 x, T2 y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
+        PairG<T1, T2> pair = (PairG<T1, T2>) o;
+        return x.equals(pair.x) && y.equals(pair.y);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(x, y);
+    }
+
+    @Override
+    public String toString() {
+        return "Pair{x=" + x + ", y=" + y + "}";
+    }
+}
 
 public class KthSmallestElementinaSortedMatrix {
     public static void main(String[] args) {
@@ -38,6 +70,30 @@ public class KthSmallestElementinaSortedMatrix {
     }
 
     public int kthSmallest(int[][] matrix, int k) {
+        int n = matrix.length, m = matrix[0].length;
+        PriorityQueue<PairG<Integer, PairG<Integer, Integer>>> pq = new PriorityQueue<>(Comparator.comparingInt(o -> o.x));
+
+        for (int i = 0; i < n; i++) {
+            pq.add(new PairG<>(matrix[i][0], new PairG<>(i, 0)));
+        }
+
+        int x = 0, y = 0;
+        for (int i = 0; i < k && !pq.isEmpty(); i++) {
+            var tmp = pq.poll();
+
+            x = tmp.y.x;
+            y = tmp.y.y;
+
+            // The next smallest element belongs to the same array
+            if (y + 1 < m) {
+                pq.add(new PairG<>(matrix[x][y + 1], new PairG<>(x, y + 1)));
+            }
+        }
+
+        return matrix[x][y];
+    }
+
+    public int kthSmallestBS(int[][] matrix, int k) {
         int n = matrix.length, m = matrix[0].length;
 
         int lo = matrix[0][0], hi = matrix[n - 1][m - 1];
