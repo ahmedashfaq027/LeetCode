@@ -204,3 +204,4 @@ This repository has solutions to the leetcode problems
 142. FruitIntoBaskets
 143. PermutationinString
 144. FindAllAnagramsinaString
+145. LongestRepeatingCharacterReplacement
