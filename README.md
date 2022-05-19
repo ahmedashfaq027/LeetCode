@@ -201,3 +201,4 @@ This repository has solutions to the leetcode problems
 140. [Leetcode](https://leetcode.com/problems/n-queens-ii/) | [NQueensII](NQueensII.java)
 141. [Leetcode](https://leetcode.com/problems/longest-consecutive-sequence/)
      | [LongestConsecutiveSequence](LongestConsecutiveSequence.java)
+142. FruitIntoBaskets
