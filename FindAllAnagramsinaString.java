@@ -63,7 +63,6 @@ public class FindAllAnagramsinaString {
             }
         }
 
-
         return res;
     }
 }
