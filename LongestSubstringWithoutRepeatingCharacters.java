@@ -25,17 +25,43 @@ Output: 0
 
 */
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
 
 public class LongestSubstringWithoutRepeatingCharacters {
     public static void main(String[] args) {
         LongestSubstringWithoutRepeatingCharacters lc = new LongestSubstringWithoutRepeatingCharacters();
 
-        String str = "abcabcbb";
-        System.out.println(lc.lengthOfLongestSubstring(str));
+        System.out.println(lc.lengthOfLongestSubstring("abcabcbb"));
+        System.out.println(lc.lengthOfLongestSubstring("bbbbb"));
+        System.out.println(lc.lengthOfLongestSubstring("pwwkew"));
     }
 
     public int lengthOfLongestSubstring(String s) {
+        int n = s.length();
+        HashMap<Character, Integer> maps = new HashMap<>();
+
+        int i = 0, res = 0;
+        for (int j = 0; j < n; j++) {
+            char ch = s.charAt(j);
+            maps.put(ch, maps.getOrDefault(ch, 0) + 1);
+
+            while ((j - i + 1) > maps.size()) {
+                char x = s.charAt(i++);
+
+                if (maps.get(x) == 1)
+                    maps.remove(x);
+                else
+                    maps.put(x, maps.get(x) - 1);
+            }
+
+            res = Math.max(res, maps.size());
+        }
+
+        return res;
+    }
+
+    public int lengthOfLongestSubstringPrefix(String s) {
         int n = s.length();
 
         int ans = 0;
