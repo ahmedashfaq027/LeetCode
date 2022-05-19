@@ -144,3 +144,4 @@ This repository has solutions to the leetcode problems
 138. SudokuSolver
 139. NQueens
 140. NQueensII
+141. LongestConsecutiveSequence
