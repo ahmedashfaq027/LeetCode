@@ -61,7 +61,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
         return res;
     }
 
-    public int lengthOfLongestSubstringPrefix(String s) {
+    public int lengthOfLongestSubstringCarryFwd(String s) {
         int n = s.length();
 
         int ans = 0;
