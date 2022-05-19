@@ -203,3 +203,4 @@ This repository has solutions to the leetcode problems
      | [LongestConsecutiveSequence](LongestConsecutiveSequence.java)
 142. FruitIntoBaskets
 143. PermutationinString
+144. FindAllAnagramsinaString
