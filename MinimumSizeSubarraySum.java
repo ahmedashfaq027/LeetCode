@@ -23,9 +23,6 @@ Follow up: If you have figured out the O(n) solution, try coding another solutio
 
 */
 
-import java.util.Arrays;
-import java.util.Collections;
-
 public class MinimumSizeSubarraySum {
     public static void main(String[] args) {
         MinimumSizeSubarraySum lc = new MinimumSizeSubarraySum();
@@ -39,20 +36,19 @@ public class MinimumSizeSubarraySum {
 
     public int minSubArrayLen(int target, int[] nums) {
         int n = nums.length;
-        int left = 0, ans = n + 1;
 
-        int currSum = 0;
-        for (int i = 0; i < n; i++) {
-            currSum += nums[i];
+        int res = n + 1;
+        int i = 0, currSum = 0;
+        for (int j = 0; j < n; j++) {
+            currSum += nums[j];
 
             while (currSum >= target) {
-                ans = Math.min(ans, i - left + 1);
-                currSum -= nums[left++];
+                res = Math.min(res, j - i + 1);
+                currSum -= nums[i++];
             }
         }
 
-
-        return (ans == n + 1) ? 0 : ans;
+        return (res == n + 1) ? 0 : res;
     }
 
     public int minSubArrayLenOptimised(int target, int[] nums) {
