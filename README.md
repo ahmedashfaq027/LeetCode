@@ -157,3 +157,4 @@ This repository has solutions to the leetcode problems
 151. UniquePathsIII
 152. CountSquareSubmatriceswithAllOnes
 153. ValidAnagram
+154. NumberofGoodWaystoSplitaString
