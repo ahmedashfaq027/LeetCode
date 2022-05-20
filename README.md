@@ -150,3 +150,4 @@ This repository has solutions to the leetcode problems
 144. [Leetcode](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [FindAllAnagramsinaString](FindAllAnagramsinaString.java)
 145. [Leetcode](https://leetcode.com/problems/longest-repeating-character-replacement/) | [LongestRepeatingCharacterReplacement](LongestRepeatingCharacterReplacement.java)
 146. [Leetcode](https://leetcode.com/problems/sliding-window-maximum/) | [SlidingWindowMaximum](SlidingWindowMaximum.java)
+147. UniquePaths
