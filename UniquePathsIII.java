@@ -1,23 +1,41 @@
 /*
 
-https://leetcode.com/problems/unique-paths/
+https://leetcode.com/problems/unique-paths-iii/
 
-There is a robot on an m x n grid. The robot is initially located at the top-left corner (i.e., grid[0][0]). The robot tries to move to the bottom-right corner (i.e., grid[m - 1][n - 1]). The robot can only move either down or right at any point in time.
-Given the two integers m and n, return the number of possible unique paths that the robot can take to reach the bottom-right corner.
-The test cases are generated so that the answer will be less than or equal to 2 * 109.
+You are given an m x n integer array grid where grid[i][j] could be:
+1. 1 representing the starting square. There is exactly one starting square.
+2. 2 representing the ending square. There is exactly one ending square.
+3. 0 representing empty squares we can walk over.
+4. -1 representing obstacles that we cannot walk over.
+
+Return the number of 4-directional walks from the starting square to the ending square, that walk over every non-obstacle square exactly once.
 
 Constraints:
-1. 1 <= m, n <= 100
+1. m == grid.length
+2. n == grid[i].length
+3. 1 <= m, n <= 20
+4. 1 <= m * n <= 20
+5. -1 <= grid[i][j] <= 2
+6. There is exactly one starting cell and one ending cell.
 
-Input: m = 3, n = 7
-Output: 28
+Input: grid = [[1,0,0,0],[0,0,0,0],[0,0,2,-1]]
+Output: 2
+    Explanation: We have the following two paths:
+    1. (0,0),(0,1),(0,2),(0,3),(1,3),(1,2),(1,1),(1,0),(2,0),(2,1),(2,2)
+    2. (0,0),(1,0),(2,0),(2,1),(1,1),(0,1),(0,2),(0,3),(1,3),(1,2),(2,2)
 
-Input: m = 3, n = 2
-Output: 3
-    Explanation: From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:
-    1. Right -> Down -> Down
-    2. Down -> Down -> Right
-    3. Down -> Right -> Down
+Input: grid = [[1,0,0,0],[0,0,0,0],[0,0,0,2]]
+Output: 4
+    Explanation: We have the following four paths:
+    1. (0,0),(0,1),(0,2),(0,3),(1,3),(1,2),(1,1),(1,0),(2,0),(2,1),(2,2),(2,3)
+    2. (0,0),(0,1),(1,1),(1,0),(2,0),(2,1),(2,2),(1,2),(0,2),(0,3),(1,3),(2,3)
+    3. (0,0),(1,0),(2,0),(2,1),(2,2),(1,2),(1,1),(0,1),(0,2),(0,3),(1,3),(2,3)
+    4. (0,0),(1,0),(2,0),(2,1),(1,1),(0,1),(0,2),(0,3),(1,3),(1,2),(2,2),(2,3)
+
+Input: grid = [[0,1],[2,0]]
+Output: 0
+    Explanation: There is no path that walks over every empty square exactly once.
+    Note that the starting and ending square can be anywhere in the grid.
 
 */
 
