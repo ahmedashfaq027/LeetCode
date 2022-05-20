@@ -37,6 +37,12 @@ public class UniquePathsII {
         System.out.println(lc.uniquePathsWithObstacles(new int[][]{{1}}));
     }
 
+    /*
+        Explanation:
+            DP Equation: dp[i][j] = dp[i-1][j] + dp[i][j-1]     if (grid[i][j] == 0), else 0
+            Base case:  For row 0, dp[0][i] = 1                 if (grid[i][j] == 0), else 0
+                        For col 0, dp[i][0] = 1                 if (grid[i][j] == 0), else 0
+    */
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
         if (obstacleGrid[0][0] == 1)
             return 0;
@@ -62,6 +68,11 @@ public class UniquePathsII {
         return dp[m - 1][n - 1];
     }
 
+    /*
+        Explanation:
+            Recursion version of DP, starts from the bottom right cell and proceeds to the start.
+            It follows the same as DP iterative
+    */
     public int uniquePathsWithObstaclesRecursion(int[][] obstacleGrid) {
         int m = obstacleGrid.length, n = obstacleGrid[0].length;
         int[][] dp = new int[m][n];

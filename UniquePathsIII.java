@@ -48,6 +48,13 @@ public class UniquePathsIII {
         System.out.println(lc.uniquePathsIII(new int[][]{{0, 1}, {2, 0}}));
     }
 
+    /*
+        Explanation:
+            We initially loop through to find the start cell, end cell and number of obstacles.
+            Then we call DFS function to iterate over the 4-directions.
+
+            The total number of cells we need to visit is (m * n - numberOfObstacles)
+    */
     public int uniquePathsIII(int[][] grid) {
         int m = grid.length, n = grid[0].length;
         int[][] dp = new int[m][n];
