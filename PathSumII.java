@@ -98,12 +98,7 @@ public class PathSumII {
             return;
         }
 
-        if (root.left != null) {
-            dfs(root.left, targetSum, currSum, new ArrayList<>(tempRes), res);
-        }
-
-        if (root.right != null) {
-            dfs(root.right, targetSum, currSum, new ArrayList<>(tempRes), res);
-        }
+        dfs(root.left, targetSum, currSum, new ArrayList<>(tempRes), res);
+        dfs(root.right, targetSum, currSum, new ArrayList<>(tempRes), res);
     }
 }
