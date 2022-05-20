@@ -26,6 +26,7 @@ Output: 1
 */
 
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class NumberofGoodWaystoSplitaString {
     public static void main(String[] args) {
@@ -36,6 +37,32 @@ public class NumberofGoodWaystoSplitaString {
     }
 
     public int numSplits(String s) {
+        int n = s.length();
+        HashSet<Character> freq = new HashSet<>();
+
+        int[] pre = new int[n], post = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            freq.add(s.charAt(i));
+            pre[i] = freq.size();
+        }
+
+        freq.clear();
+        for (int i = n - 1; i >= 0; i--) {
+            freq.add(s.charAt(i));
+            post[i] = freq.size();
+        }
+
+        int res = 0;
+        for (int i = 1; i < n; i++) {
+            if (pre[i - 1] == post[i])
+                res++;
+        }
+
+        return res;
+    }
+
+    public int numSplitsMaps(String s) {
         int n = s.length();
 
         if (n == 1) {
