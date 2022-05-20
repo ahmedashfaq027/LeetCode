@@ -159,3 +159,4 @@ This repository has solutions to the leetcode problems
 153. ValidAnagram
 154. NumberofGoodWaystoSplitaString
 155. CountNumberofTeams
+156. SortIntegersbyThePowerValue
