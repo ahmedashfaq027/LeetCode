@@ -20,20 +20,20 @@ Output: ""
 import java.util.HashMap;
 import java.util.PriorityQueue;
 
-class PairG<T1, T2> {
-    public T1 x;
-    public T2 y;
-
-    public PairG(T1 x, T2 y) {
-        this.x = x;
-        this.y = y;
-    }
-
-    @Override
-    public String toString() {
-        return "Pair{x=" + x + ", y=" + y + "}";
-    }
-}
+//class PairG<T1, T2> {
+//    public T1 x;
+//    public T2 y;
+//
+//    public PairG(T1 x, T2 y) {
+//        this.x = x;
+//        this.y = y;
+//    }
+//
+//    @Override
+//    public String toString() {
+//        return "Pair{x=" + x + ", y=" + y + "}";
+//    }
+//}
 
 public class ReorganizeString {
     public static void main(String[] args) {
@@ -45,7 +45,6 @@ public class ReorganizeString {
     }
 
     public String reorganizeString(String s) {
-        int n = s.length();
         HashMap<Character, Integer> maps = new HashMap<>();
         PriorityQueue<PairG<Integer, Character>> pq = new PriorityQueue<>((o1, o2) -> (o2.x - o1.x));
 
