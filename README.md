@@ -158,3 +158,4 @@ This repository has solutions to the leetcode problems
 152. CountSquareSubmatriceswithAllOnes
 153. ValidAnagram
 154. NumberofGoodWaystoSplitaString
+155. CountNumberofTeams
