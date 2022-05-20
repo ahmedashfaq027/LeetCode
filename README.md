@@ -150,13 +150,13 @@ This repository has solutions to the leetcode problems
 144. [Leetcode](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [FindAllAnagramsinaString](FindAllAnagramsinaString.java)
 145. [Leetcode](https://leetcode.com/problems/longest-repeating-character-replacement/) | [LongestRepeatingCharacterReplacement](LongestRepeatingCharacterReplacement.java)
 146. [Leetcode](https://leetcode.com/problems/sliding-window-maximum/) | [SlidingWindowMaximum](SlidingWindowMaximum.java)
-147. UniquePaths
-148. MinimumNumberofArrowstoBurstBalloons
-149. ReorganizeString
-150. UniquePathsII
-151. UniquePathsIII
-152. CountSquareSubmatriceswithAllOnes
-153. ValidAnagram
-154. NumberofGoodWaystoSplitaString
-155. CountNumberofTeams
-156. SortIntegersbyThePowerValue
+147. [Leetcode](https://leetcode.com/problems/unique-paths/) | [UniquePaths](UniquePaths.java)
+148. [Leetcode](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | [MinimumNumberofArrowstoBurstBalloons](MinimumNumberofArrowstoBurstBalloons.java)
+149. [Leetcode](https://leetcode.com/problems/reorganize-string/) | [ReorganizeString](ReorganizeString.java)
+150. [Leetcode](https://leetcode.com/problems/unique-paths-ii/) | [UniquePathsII](UniquePathsII.java)
+151. [Leetcode](https://leetcode.com/problems/unique-paths-iii/) | [UniquePathsIII](UniquePathsIII.java)
+152. [Leetcode](https://leetcode.com/problems/count-square-submatrices-with-all-ones/) | [CountSquareSubmatriceswithAllOnes](CountSquareSubmatriceswithAllOnes.java)
+153. [Leetcode](https://leetcode.com/problems/valid-anagram/) | [ValidAnagram](ValidAnagram.java)
+154. [Leetcode](https://leetcode.com/problems/number-of-good-ways-to-split-a-string/) | [NumberofGoodWaystoSplitaString](NumberofGoodWaystoSplitaString.java)
+155. [Leetcode](https://leetcode.com/problems/count-number-of-teams/) | [CountNumberofTeams](CountNumberofTeams.java)
+156. [Leetcode](https://leetcode.com/problems/sort-integers-by-the-power-value/) | [SortIntegersbyThePowerValue](SortIntegersbyThePowerValue.java)
