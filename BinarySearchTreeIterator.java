@@ -12,8 +12,8 @@ Notice that by initializing the pointer to a non-existent smallest number, the f
 You may assume that next() calls will always be valid. That is, there will be at least a next number in the in-order traversal when next() is called.
 
 Constraints:
-1. The number of nodes in the tree is in the range [1, 105].
-2. 0 <= Node.val <= 106
+1. The number of nodes in the tree is in the range [1, 10^5].
+2. 0 <= Node.val <= 10^6
 3. At most 105 calls will be made to hasNext, and next.
 
 Follow up:
