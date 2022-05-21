@@ -114,10 +114,14 @@ public class PopulatingNextRightPointersinEachNode {
         while (!q.isEmpty()) {
             int n = q.size();
 
+            NodeTree head = q.peek();
+            while (head != null) {
+                res.add(head.val);
+                head = head.next;
+            }
+
             for (int i = 0; i < n; i++) {
                 NodeTree tmp = q.poll();
-
-                res.add(tmp.val);
 
                 if (tmp.left != null)
                     q.add(tmp.left);
