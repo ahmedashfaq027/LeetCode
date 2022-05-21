@@ -168,3 +168,4 @@ This repository has solutions to the leetcode problems
 162. BinaryTreeZigzagLevelOrderTraversal
 163. BinaryTreeLevelOrderTraversalII
 164. ConvertSortedListtoBinarySearchTree
+165. FlattenBinaryTreetoLinkedList
