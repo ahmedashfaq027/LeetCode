@@ -163,3 +163,4 @@ This repository has solutions to the leetcode problems
 157. LongestSubarrayof1sAfterDeletingOneElement
 158. BeautifulArrangement
 159. GrayCode
+160. SymmetricTree
