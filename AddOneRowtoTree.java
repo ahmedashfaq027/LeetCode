@@ -29,6 +29,22 @@ Output: [4,2,null,1,1,3,null,null,1]
 import java.util.LinkedList;
 import java.util.Queue;
 
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
+
 public class AddOneRowtoTree {
     public static void main(String[] args) {
         AddOneRowtoTree lc = new AddOneRowtoTree();
