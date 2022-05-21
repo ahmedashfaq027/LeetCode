@@ -160,19 +160,19 @@ This repository has solutions to the leetcode problems
 154. [Leetcode](https://leetcode.com/problems/number-of-good-ways-to-split-a-string/) | [NumberofGoodWaystoSplitaString](NumberofGoodWaystoSplitaString.java)
 155. [Leetcode](https://leetcode.com/problems/count-number-of-teams/) | [CountNumberofTeams](CountNumberofTeams.java)
 156. [Leetcode](https://leetcode.com/problems/sort-integers-by-the-power-value/) | [SortIntegersbyThePowerValue](SortIntegersbyThePowerValue.java)
-157. LongestSubarrayof1sAfterDeletingOneElement
-158. BeautifulArrangement
-159. GrayCode
-160. SymmetricTree
-161. BinaryTreeLevelOrderTraversal
-162. BinaryTreeZigzagLevelOrderTraversal
-163. BinaryTreeLevelOrderTraversalII
-164. ConvertSortedListtoBinarySearchTree
-165. FlattenBinaryTreetoLinkedList
-166. PopulatingNextRightPointersinEachNode
-167. PopulatingNextRightPointersinEachNodeII
-168. SumRoottoLeafNumbers
-169. BinarySearchTreeIterator
-170. BinaryTreeRightSideView
-171. BinaryTreeMaximumPathSum
-172. AddOneRowtoTree
+157. [Leetcode](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) | [LongestSubarrayof1sAfterDeletingOneElement](LongestSubarrayof1sAfterDeletingOneElement.java)
+158. [Leetcode](https://leetcode.com/problems/beautiful-arrangement/) | [BeautifulArrangement](BeautifulArrangement.java)
+159. [Leetcode](https://leetcode.com/problems/gray-code/) | [GrayCode](GrayCode.java)
+160. [Leetcode](https://leetcode.com/problems/symmetric-tree/) | [SymmetricTree](SymmetricTree.java)
+161. [Leetcode](https://leetcode.com/problems/binary-tree-level-order-traversal/) | [BinaryTreeLevelOrderTraversal](BinaryTreeLevelOrderTraversal.java)
+162. [Leetcode](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) | [BinaryTreeZigzagLevelOrderTraversal](BinaryTreeZigzagLevelOrderTraversal.java)
+163. [Leetcode](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) | [BinaryTreeLevelOrderTraversalII](BinaryTreeLevelOrderTraversalII.java)
+164. [Leetcode](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | [ConvertSortedListtoBinarySearchTree](ConvertSortedListtoBinarySearchTree.java)
+165. [Leetcode](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | [FlattenBinaryTreetoLinkedList](FlattenBinaryTreetoLinkedList.java)
+166. [Leetcode](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | [PopulatingNextRightPointersinEachNode](PopulatingNextRightPointersinEachNode.java)
+167. [Leetcode](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | [PopulatingNextRightPointersinEachNodeII](PopulatingNextRightPointersinEachNodeII.java)
+168. [Leetcode](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | [SumRoottoLeafNumbers](SumRoottoLeafNumbers.java)
+169. [Leetcode](https://leetcode.com/problems/binary-search-tree-iterator/) | [BinarySearchTreeIterator](BinarySearchTreeIterator.java)
+170. [Leetcode](https://leetcode.com/problems/binary-tree-right-side-view/) | [BinaryTreeRightSideView](BinaryTreeRightSideView.java)
+171. [Leetcode](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | [BinaryTreeMaximumPathSum](BinaryTreeMaximumPathSum.java)
+172. [Leetcode](https://leetcode.com/problems/add-one-row-to-tree/) | [AddOneRowtoTree](AddOneRowtoTree.java)
