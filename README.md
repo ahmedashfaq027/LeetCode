@@ -172,3 +172,4 @@ This repository has solutions to the leetcode problems
 166. PopulatingNextRightPointersinEachNode
 167. PopulatingNextRightPointersinEachNodeII
 168. SumRoottoLeafNumbers
+169. BinarySearchTreeIterator
