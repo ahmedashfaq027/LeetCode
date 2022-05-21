@@ -160,3 +160,4 @@ This repository has solutions to the leetcode problems
 154. [Leetcode](https://leetcode.com/problems/number-of-good-ways-to-split-a-string/) | [NumberofGoodWaystoSplitaString](NumberofGoodWaystoSplitaString.java)
 155. [Leetcode](https://leetcode.com/problems/count-number-of-teams/) | [CountNumberofTeams](CountNumberofTeams.java)
 156. [Leetcode](https://leetcode.com/problems/sort-integers-by-the-power-value/) | [SortIntegersbyThePowerValue](SortIntegersbyThePowerValue.java)
+157. LongestSubarrayof1sAfterDeletingOneElement
