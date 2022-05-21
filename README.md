@@ -161,3 +161,4 @@ This repository has solutions to the leetcode problems
 155. [Leetcode](https://leetcode.com/problems/count-number-of-teams/) | [CountNumberofTeams](CountNumberofTeams.java)
 156. [Leetcode](https://leetcode.com/problems/sort-integers-by-the-power-value/) | [SortIntegersbyThePowerValue](SortIntegersbyThePowerValue.java)
 157. LongestSubarrayof1sAfterDeletingOneElement
+158. BeautifulArrangement
