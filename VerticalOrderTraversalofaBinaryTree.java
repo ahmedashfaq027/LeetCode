@@ -41,6 +41,22 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.TreeMap;
 
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
+    }
+}
+
 public class VerticalOrderTraversalofaBinaryTree {
     public static void main(String[] args) {
         VerticalOrderTraversalofaBinaryTree lc = new VerticalOrderTraversalofaBinaryTree();
