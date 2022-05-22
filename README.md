@@ -178,3 +178,4 @@ This repository has solutions to the leetcode problems
 172. [Leetcode](https://leetcode.com/problems/add-one-row-to-tree/) | [AddOneRowtoTree](AddOneRowtoTree.java)
 173. TrimaBinarySearchTree
 174. PrintBinaryTree
+175. BinaryTreePruning
