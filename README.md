@@ -176,3 +176,5 @@ This repository has solutions to the leetcode problems
 170. [Leetcode](https://leetcode.com/problems/binary-tree-right-side-view/) | [BinaryTreeRightSideView](BinaryTreeRightSideView.java)
 171. [Leetcode](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | [BinaryTreeMaximumPathSum](BinaryTreeMaximumPathSum.java)
 172. [Leetcode](https://leetcode.com/problems/add-one-row-to-tree/) | [AddOneRowtoTree](AddOneRowtoTree.java)
+173. TrimaBinarySearchTree
+174. PrintBinaryTree
