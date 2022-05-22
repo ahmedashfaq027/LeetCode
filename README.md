@@ -182,3 +182,4 @@ This repository has solutions to the leetcode problems
 176. AllNodesDistanceKinBinaryTree
 177. VerticalOrderTraversalofaBinaryTree
 178. ConstructBinaryTreefromPreorderandPostorderTraversal
+179. CompleteBinaryTreeInserter
