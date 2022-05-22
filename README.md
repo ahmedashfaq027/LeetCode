@@ -180,3 +180,4 @@ This repository has solutions to the leetcode problems
 174. PrintBinaryTree
 175. BinaryTreePruning
 176. AllNodesDistanceKinBinaryTree
+177. VerticalOrderTraversalofaBinaryTree
