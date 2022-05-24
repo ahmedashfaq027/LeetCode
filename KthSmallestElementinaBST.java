@@ -58,7 +58,34 @@ public class KthSmallestElementinaBST {
         System.out.println(lc.kthSmallest(root, 3));
     }
 
+    int count = 0, value = 0;
+
     public int kthSmallest(TreeNode root, int k) {
+        count = 0;
+        value = 0;
+
+        dfsInorder(root, k);
+
+        return value;
+    }
+
+    private void dfsInorder(TreeNode root, int k) {
+        if (root == null) {
+            return;
+        }
+
+        dfsInorder(root.left, k);
+
+        count++;
+        if (count == k) {
+            value = root.val;
+            return;
+        }
+
+        dfsInorder(root.right, k);
+    }
+
+    public int kthSmallestIterative(TreeNode root, int k) {
         if (root == null)
             return 0;
 
