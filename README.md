@@ -183,3 +183,4 @@ This repository has solutions to the leetcode problems
 177. VerticalOrderTraversalofaBinaryTree
 178. ConstructBinaryTreefromPreorderandPostorderTraversal
 179. CompleteBinaryTreeInserter
+180. KthSmallestElementinaBST
