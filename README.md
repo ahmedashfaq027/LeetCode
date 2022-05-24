@@ -176,11 +176,11 @@ This repository has solutions to the leetcode problems
 170. [Leetcode](https://leetcode.com/problems/binary-tree-right-side-view/) | [BinaryTreeRightSideView](BinaryTreeRightSideView.java)
 171. [Leetcode](https://leetcode.com/problems/binary-tree-maximum-path-sum/) | [BinaryTreeMaximumPathSum](BinaryTreeMaximumPathSum.java)
 172. [Leetcode](https://leetcode.com/problems/add-one-row-to-tree/) | [AddOneRowtoTree](AddOneRowtoTree.java)
-173. TrimaBinarySearchTree
-174. PrintBinaryTree
-175. BinaryTreePruning
-176. AllNodesDistanceKinBinaryTree
-177. VerticalOrderTraversalofaBinaryTree
-178. ConstructBinaryTreefromPreorderandPostorderTraversal
-179. CompleteBinaryTreeInserter
-180. KthSmallestElementinaBST
+173. [Leetcode](https://leetcode.com/problems/trim-a-binary-search-tree/) | [TrimaBinarySearchTree](TrimaBinarySearchTree.java)
+174. [Leetcode](https://leetcode.com/problems/print-binary-tree/) | [PrintBinaryTree](PrintBinaryTree.java)
+175. [Leetcode](https://leetcode.com/problems/binary-tree-pruning/) | [BinaryTreePruning](BinaryTreePruning.java)
+176. [Leetcode](https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/) | [AllNodesDistanceKinBinaryTree](AllNodesDistanceKinBinaryTree.java)
+177. [Leetcode](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/) | [VerticalOrderTraversalofaBinaryTree](VerticalOrderTraversalofaBinaryTree.java)
+178. [Leetcode](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) | [ConstructBinaryTreefromPreorderandPostorderTraversal](ConstructBinaryTreefromPreorderandPostorderTraversal.java)
+179. [Leetcode](https://leetcode.com/problems/complete-binary-tree-inserter/) | [CompleteBinaryTreeInserter](CompleteBinaryTreeInserter.java)
+180. [Leetcode](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | [KthSmallestElementinaBST](KthSmallestElementinaBST.java)
