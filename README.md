@@ -170,7 +170,7 @@ This repository has solutions to the leetcode problems
 164. [Leetcode](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/) | [ConvertSortedListtoBinarySearchTree](ConvertSortedListtoBinarySearchTree.java)
 165. [Leetcode](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | [FlattenBinaryTreetoLinkedList](FlattenBinaryTreetoLinkedList.java)
 166. [Leetcode](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | [PopulatingNextRightPointersinEachNode](PopulatingNextRightPointersinEachNode.java)
-167. [Leetcode](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/) | [PopulatingNextRightPointersinEachNodeII](PopulatingNextRightPointersinEachNodeII.java)
+167. [Leetcode](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/) | [PopulatingNextRightPointersinEachNodeII](PopulatingNextRightPointersinEachNodeII.java)
 168. [Leetcode](https://leetcode.com/problems/sum-root-to-leaf-numbers/) | [SumRoottoLeafNumbers](SumRoottoLeafNumbers.java)
 169. [Leetcode](https://leetcode.com/problems/binary-search-tree-iterator/) | [BinarySearchTreeIterator](BinarySearchTreeIterator.java)
 170. [Leetcode](https://leetcode.com/problems/binary-tree-right-side-view/) | [BinaryTreeRightSideView](BinaryTreeRightSideView.java)
